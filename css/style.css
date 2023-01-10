@@ -772,20 +772,6 @@ text-align: center;
   border-radius: 0px 0px 4px 4px;
 }
 
-
-
-/*
-.main-list-team {
-  display: flex;
-  gap: 24px;
-}
-
-
-.team-title {
-}
-
-
-
 .team {
   margin-top: 32px;
 }
@@ -798,7 +784,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
 .social-team-item {
@@ -830,6 +816,52 @@ text-align: center;
   fill: var(--portfolio-button-color);
 }
 
+
+
+/*MOBILE*/
+@media screen and (max-width: 1199px) {
+  .main-list-team {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+   align-items: center;
+}
+
+.team-item {
+  width: 260px;
+  
+}
+
+
+}
+
+
+/*DESKTOP*/
+
+@media screen and (min-width:1200px) {
+  .main-list-team {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+/* TABLET */
+  
+@media screen and (min-width:768px) {
+  /* .main-list-team {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-item {
+    flex-basis:calc((100%-24px)/2)
+  } */
+
+
+}
+
+/*===========costumers==========*/
+
 .title-costumers {
   font-weight: 700;
   font-size: 36px;
@@ -838,6 +870,42 @@ text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 72px;
 }
+
+.costumers-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+}
+
+.icon-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #8e8f99;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+
+  transition: border var(--transition-dur-and-func);
+}
+
+.costumers-icon {
+  fill: #8e8f99;
+  transition: fill var(--transition-dur-and-func);
+}
+.icon-a:hover .costumers-icon,
+.icon-a:focus .costumers-icon {
+  fill: var(--special-text-color);
+}
+
+.icon-a:focus,
+.icon-a:hover {
+  border: 1px solid var(--special-text-color);
+}
+/* 
 
 .costumers-list {
   display: flex;
@@ -878,7 +946,7 @@ text-align: center;
 .icon-a:focus,
 .icon-a:hover {
   border: 1px solid var(--special-text-color);
-} */
+} */ 
 /*=========footer==================*/
 
 /* .footer {
