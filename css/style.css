@@ -141,6 +141,8 @@ img {
   color: var(--special-text-color);
 }
 
+
+
 @media screen and (max-width: 767px) {
   .mobile-menu {
     display: flex;
@@ -336,8 +338,9 @@ img {
   }
   .header-container {
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 10px;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   header .container {
     display: flex;
@@ -349,11 +352,15 @@ img {
   }
   .header-nav {
     display: flex;
+    /* padding-bottom: 24px; */
   }
 
   .site-nav {
     display: flex;
     gap: 40px;
+    
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
   }
   
   .link {
@@ -388,6 +395,9 @@ img {
   }
   
   .site-nav {
+padding-top: 24px;
+padding-bottom: 24px;
+
     color: var(--primary-text-color);
   
     font-weight: 700;
@@ -402,18 +412,25 @@ img {
     color: var(--secondary-text-color);
   }
   
+ .mail {
+padding-top: 15px;
+ }
   
   .auth-nav {
   
     /* margin-left: 118px; */
     gap: 40px;
+    /* padding-top: 24px;
+    padding-bottom: 0; */
+    
     
   }
   
   .auth-nav a {
     color: var(--secondary-text-color);
-    font-size: 16px;
-    line-height: 1.5;
+    font-weight: 400;
+font-size: 12px;
+line-height: 16px;
   
     transition: color var(--transition-dur-and-func);
   }
@@ -431,9 +448,28 @@ img {
     margin-right: 77px;
   }
 
+.site-nav {
+   padding-top: 0;
+    padding-bottom: 0;
+}
+
   .auth-nav {
     display: flex;
     margin-left: 331px;
+
+  
+    /* padding-top: 0;
+    padding-bottom: 0; */
+  }
+
+.mail {
+  padding-top: 0;
+}
+
+  .auth-nav a {
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
   }
 
   .hero-section {
@@ -507,6 +543,11 @@ img {
   .hero-section {
   padding-top: 112px;
   padding-bottom: 112px;
+  background-image: linear-gradient(
+    to right,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ), url(../img/heromobmin.jpg);
   }
   
   .hero-title {
@@ -530,6 +571,11 @@ line-height: 40px;
   .hero-section {
     padding-top: 112px;
     padding-bottom: 108px;
+    background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url(../img/herotabmin.jpg);
       }
     
     .hero-title {
@@ -550,7 +596,12 @@ line-height: 40px;
   .hero-section {
     padding-top: 188px;
     padding-bottom: 188px;
-      margin: 0 auto;}
+      margin: 0 auto;
+    background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url(../img/peopleofficemin.jpg);}
     
     .hero-title {
       max-width: 494px;
@@ -572,10 +623,14 @@ line-height: 40px;
       to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
-    ), url(../img/darkbgx2min.jpg);
+    ), url(../img/herodesx2min.jpg),  url(../img/herotabx2min.jpg), url(../img/heromobx2min.jpg);
+
+  
   }
   
 }
+
+
 
 
 
@@ -638,7 +693,7 @@ line-height: 40px;
   padding-bottom: 96px;
 }
 
-  .feature-title {
+  .feature-title-comp {
     
 text-align: center;
   }
@@ -698,7 +753,7 @@ text-align: center;
     flex-wrap: nowrap;
     gap: 24px;
   }
-  .feature-title {
+  .feature-title-comp {
     margin-bottom: 8px;
   
     color: var(--primary-text-color);
@@ -1002,6 +1057,11 @@ line-height: 24px;
     column-gap: 16px;
     padding: 0
   }
+
+  .costumers-item {
+    width: 190px;
+    height: 88px;
+  }
 }
 
 
@@ -1116,7 +1176,7 @@ line-height: 24px;
 }
 
 .footer-form-input {
-  display: flex;
+  /* display: flex; */
   width: 269px;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1185,15 +1245,18 @@ transition: background-color var(--transition-dur-and-func),
   }
 
   .footer-container {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     align-items: center;
+    justify-content: center;
   }
   .logo-footer {
     display: flex;
     justify-content: center;
   }
-
+.text-footer {
+  margin: 0 auto;
+}
   .media-title {
     /* margin-top: 72px; */
     display: flex;
@@ -1219,6 +1282,12 @@ transition: background-color var(--transition-dur-and-func),
   
   .footer-form-con {
     margin-top: 72px;
+  }
+
+  .footer-form-input {
+    max-width: 396px;
+    width: 100%;
+height: 40px;
   }
 }
 
